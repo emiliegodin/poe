@@ -1,0 +1,10 @@
+CREATE DATABASE users;
+CREATE USER 'users'@'%' IDENTIFIED BY 'users';
+GRANT ALL PRIVILEGES ON users.* TO 'users'@'%';
+FLUSH PRIVILEGES ;
+use users ;
+CREATE TABLE USERS(NAME VARCHAR(50) NOT NULL PRIMARY KEY,EMAIL VARCHAR(100) NOT NULL);
+INSERT INTO USERS VALUES('guilhelm','gpyd31@gmail.com');
+INSERT INTO USERS VALUES('joe','joe@gmail.com');
+INSERT INTO USERS VALUES('mike','mike@gmail.com');
+INSERT INTO USERS VALUES('suzy','suzy@gmail.com');
